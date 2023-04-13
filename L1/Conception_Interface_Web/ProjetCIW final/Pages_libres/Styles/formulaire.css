@@ -1,0 +1,44 @@
+#main {
+display: block;
+float: left;
+width:50%;
+height: 750px;
+margin-left:100px;
+margin-top: 150px;
+background-color:#FFFFFF;
+border-radius: 30px;
+}
+
+article h2 {
+text-align: left;
+margin-left: 10px;
+}
+fieldset{
+  margin-left: 50px;
+margin-bottom: 0%;
+margin-top: 10%;
+}
+
+legend{
+  font-size: 110%;
+}
+
+
+form {
+  width: 400px;
+  color: black;
+  text-align: left;
+  cursor: default;
+}
+
+label
+{
+  display: inline-block;
+width: 125px;
+text-align: left;
+}
+
+.center
+{
+  text-align: center;
+}

@@ -1,0 +1,8 @@
+QUESTION 5 : 
+1) 
+  - Formule du point milieu d'ordre 2.
+  - Formule des Trapeze d'ordre 2.
+  - Formule de Simpson Composite d'odre 4.
+
+  La formule de simpson est la plus adaptée car elle est plus précise, 
+  en effet la valleur de l'erreur calculée est plus précise que pour les autres fonctions.

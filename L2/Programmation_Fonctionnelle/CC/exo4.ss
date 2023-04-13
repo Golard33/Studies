@@ -1,0 +1,12 @@
+(define x 6)
+(define y 'c)
+(define z "ab")
+
+(cons x (list y z))
+(cons x (cons y (cons z '())))
+(cons (list (list x)) (list y z))
+ (list y '(+ x 2) z '(* x 3))
+  (append (list z) '(c d) '(e f))
+ (append (list (remainder x 2)) (list (quotient x 2)))
+ (caddr '(y x ((z))))
+ (caaddr (cons x (list '(x y) (list z))))

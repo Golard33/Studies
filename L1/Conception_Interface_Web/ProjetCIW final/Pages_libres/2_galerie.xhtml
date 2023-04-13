@@ -1,0 +1,117 @@
+<!DOCTYPE HTML>
+<html lang="fr" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>    <!-- mettre les feuilles style dans header -->
+  <meta charset="utf-8" />
+  <title> Galerie </title>
+  	<link rel="stylesheet" href="Styles/Style.css" />
+    <link rel="stylesheet" type="text/css" href="print.css" media="print"/>
+    <script type="text/javascript" src="Scripts/galerie.js"></script>
+</head>
+
+<header>
+    <div id="en-tete">
+  	<a href="../accueil.xhtml"><h1>La Saga du Sorceleur</h1></a>
+  	</div>
+</header>
+
+<menu>
+  <div id="menu">
+  <ul>
+    <li><a href="3_inscription.xhtml" title="Inscription">Inscription</a></li>
+    <li><a href="1_presentation.xhtml" title="La Saga Du Sorceleur">La Saga Du Sorceleur</a>
+      <ul>
+        <li><a href="serie_litteraire.xhtml">Série Littéraire</a></li>
+        <li><a href="adaptation_netflix.xhtml">Adaptation Netflix</a></li>
+        <li><a href="jeux_video.xhtml">Jeux Vidéo</a></li>
+        <li><a href="info_auteur.xhtml">Informations Sur l'Auteur</a></li>
+      </ul>
+    </li>
+    <li><a href="../Page_imposée/Livre_Petit/livre_v2.xhtml" title="Livre Imposé">Livre Imposé</a></li>
+    <li><a href="2_galerie.xhtml" title="Carousselle">Carousselle</a></li>
+  </ul>
+ </div>
+</menu>
+
+<nav>
+  <div id="suivant">
+    <a href="3_inscription.xhtml"><img src="Images/fleche_suivant.png" alt="fleche suivant"
+      weight="25"
+      height="25"/></a>
+  </div>
+	<div id="retour">
+    <a href="info_auteur.xhtml"><img src="Images/fleche_retour.png" alt=" fleche retour"
+      weight="25"
+      height="25"/></a>
+  </div>
+</nav>
+
+<body id="body" oncontextmenu="CouleurFond()">
+  <div id="galerie">
+
+      <h1> Galerie D'image !</h1>
+    <p> L'image correspond à <b id="id_quoi"> Geralt de Riv</b></p>
+    <p><img id="id_image" src="Images/galerie_sorceleur.jpg" height="350px"/></p>
+    <label>Méthode 1 : navigation </label>
+    <input type="button" value="Le sorceleur en combat" onclick="changeImageM1('Images/galerie_sorceleur_combat.jpg', 'Le sorceleur en combat ')"
+    />
+    <input type="button" value=" Yennefer" onclick="changeImageM1('Images/galerie_yennefer.jpeg', 'Yennefer ')"
+    />
+    <br/>
+
+    <label>Méthode 2 : accès direct </label>
+    <input type="button" value="Jaskier" onclick="changeImageM2('id_image', 'id_quoi', 'Images/galerie_jaskier.jpeg', 'Jaskier')"
+    />
+    <input type="button" value="Ciri" onclick="changeImageM2('id_image', 'id_quoi', 'Images/galerie_ciri.jpeg', 'Ciri')"
+    />
+    <br/>
+
+    <label>Méthode 3 : Query selector </label>
+    <input type="button" value="Triss" onclick="changeImageM3('Images/galerie_triss.jpeg', 'triss !')"
+    />
+    <input type="button" value=" Tissaia" onclick="changeImageM3('Images/galerie_tissaia.jpeg', 'Tissaia !')"
+    />
+      <img/>
+    </div>
+
+
+
+      <footer>
+        <div id="galerie_footer">
+          <div id="text_footer_galerie">
+            <input type="button" value="remise à l'état initial" onclick="changeImageM3('Images/galerie_sorceleur.jpg', 'Geralt de Riv')"  />
+          </div>
+            <br/>
+              <table border = "0">
+                <tr>
+                  <td> <img onmouseover="changeImageM3('Images/galerie_sorceleur.jpg', 'Geralt de Riv')" src="Images/galerie_sorceleur.jpg" alt="Geralt" height="50px">  </img></td>
+                  <td> <img onmouseover="changeImageM3('Images/galerie_sorceleur_combat.jpg', 'Le sorceleur en combat')" src="Images/galerie_sorceleur_combat.jpg" alt="sorceleur en combat" height="50px">  </img></td>
+                  <td> <img onmouseover="changeImageM3('Images/galerie_yennefer.jpeg', 'Yennefer')" src="Images/galerie_yennefer.jpeg" alt="Yennefer" height="50px">  </img></td>
+                  <td> <img onmouseover="changeImageM3('Images/galerie_jaskier.jpeg', 'Jaskier')" src="Images/galerie_jaskier.jpeg" alt="Jaskier" height="50px">  </img></td>
+                  <td> <img onmouseover="changeImageM3('Images/galerie_ciri.jpeg', 'Ciri')" src="Images/galerie_ciri.jpeg" alt="Ciri" height="50px">  </img></td>
+                  <td> <img onmouseover="changeImageM3('Images/galerie_triss.jpeg', 'Triss')" src="Images/galerie_triss.jpeg" alt="Triss" height="50px">  </img></td>
+                  <td> <img onmouseover="changeImageM3('Images/galerie_tissaia.jpeg', 'Tissaia')" src="Images/galerie_tissaia.jpeg" alt="Tissaia" height="50px">  </img></td>
+                </tr>
+              </table>
+              </div>
+        </footer>
+
+</body>
+
+  <script>
+  var bodyTag = document.body;
+  var divTag = bodyTag.childNodes[1]
+  var p1Tag   = divTag.childNodes[3];
+  var bTag    = p1Tag.lastChild;
+
+  var p2Tag   = bodyTag.childNodes[1];
+  var p3Tag  = p2Tag.childNodes[5];
+  var imgTag  = p3Tag.firstChild;
+
+
+
+  console.log("p1Tag  : "+ p1Tag.innerHTML);
+  console.log("bTag   : "+ bTag.innerHTML);
+  console.log("imgTag : "+ imgTag.src);
+  </script>
+</html>

@@ -1,0 +1,10 @@
+2. Le degré d'exactitude correspond au degré (le plus élevé) du polynôme pour lequel l'erreur sera nulle.
+C'est-à-dire que notre calcul approché de l'intégrale sera exact pour ces polynôme.
+On obtient une erreur nulle avec un polynôme de degré 5.
+Cela signifie que le degré d'exactitude de la méthode est d'au moins 5.
+
+3. Nous testons avec un polynôme de degré 6 et nous remarquons que l'erreur de d'ordre 10^-10.
+En conclusion, Le degré d'exactitude est bien 5.
+
+4. Plus on rajoute de sous-intervalle, et plus l'erreur tend vers 0.
+Pour n=10 -> 10^-17 / Pour n=20 -> 0. Donc la méthode converge à l'ordre de 10^-17.

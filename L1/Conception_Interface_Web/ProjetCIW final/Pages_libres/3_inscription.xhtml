@@ -1,0 +1,127 @@
+<!DOCTYPE HTML>
+<html lang="fr" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>    <!-- mettre les feuilles style dans header -->
+  <meta charset="utf-8" />
+  <title> Inscription </title>
+  	<link rel="stylesheet" href="Styles/Style.css" />
+    <link rel="stylesheet" href="Styles/formulaire.css" />
+    <link rel="stylesheet" type="text/css" href="print.css" media="print"/>
+    <script type="text/javascript" src="./Scripts/formulaire.js"></script>
+</head>
+
+<header>
+    <div id="en-tete">
+  	<a href="../accueil.xhtml"><h1>La Saga du Sorceleur</h1></a>
+  	</div>
+</header>
+
+<menu>
+  <div id="menu">
+  <ul>
+    <li><a href="3_inscription.xhtml" title="Inscription">Inscription</a></li>
+    <li><a href="1_presentation.xhtml" title="La Saga Du Sorceleur">La Saga Du Sorceleur</a>
+      <ul>
+        <li><a href="serie_litteraire.xhtml">Série Littéraire</a></li>
+        <li><a href="adaptation_netflix.xhtml">Adaptation Netflix</a></li>
+        <li><a href="jeux_video.xhtml">Jeux Vidéo</a></li>
+        <li><a href="info_auteur.xhtml">Informations Sur l'Auteur</a></li>
+      </ul>
+    </li>
+    <li><a href="../Page_imposée/Livre_Petit/livre_v2.xhtml" title="Livre Imposé">Livre Imposé</a></li>
+    <li><a href="2_galerie.xhtml" title="Carousselle">Carousselle</a></li>
+  </ul>
+ </div>
+</menu>
+
+<nav>
+  <div id="suivant">
+    <a href="../accueil.xhtml"><img src="Images/fleche_suivant.png" alt="fleche suivant"
+      weight="25"
+      height="25"/></a>
+  </div>
+	<div id="retour">
+    <a href="2_galerie.xhtml"><img src="Images/fleche_retour.png" alt=" fleche retour"
+      weight="25"
+      height="25"/></a>
+  </div>
+</nav>
+
+<body   style="background-image:url('Images/page_accueil.jpg');"></body>
+
+<section>
+    <div id="positionAside">
+     <aside>
+<p> Veuillez remplir le formulaire en remplissant les champs de manière correcte.</p>
+  </aside>
+ </div>
+
+<div id="main">
+    <article>
+
+
+      <h2>Formulaire Inscription</h2>
+
+
+      <form method="get" action="https://httpbin.org/get">
+            <fieldset>
+              <legend>Identité</legend>
+          <label for="f_civilité">Civilité :</label>
+          <select name="niv">
+            <option>Mme</option>
+            <option>M.</option>
+          </select><br/>
+          <label for="f_prenom">Prénom :</label>
+          <input type="text" name="iden_prenom" id="f_prenom" />
+          <br />
+          <label for="f_nom">Nom :</label>
+          <input type="text" name="iden_nom" id="f_nom" />
+          <div><label for="email">E-mail :</label>
+          <input type="email" name="subscriber_email" id="email" /></div>
+          <label for="f_Date">Date de naissance:</label>
+          <input type="date" name="iden_Date" id="f_Date" />
+          <br />
+            </fieldset>
+
+            <fieldset>
+              <legend>adresse de facturation</legend>
+          <label for="f_Adresse">Adresse :</label>
+          <input type="text" name="fact_Adresse" id="f_Adresse" />
+
+          <label for="f_codepostale">Code Postal :</label>
+          <input type="text" name="fact_codepostale" id="f_codepostale" />
+
+          <label for="f_ville">Ville :</label>
+          <input type="text" name="fact_ville" id="f_ville" />
+          <br/>
+            </fieldset>
+
+
+            <fieldset>
+              <legend>adresse de livraison</legend>
+          <label for="f_idem">Idem que facturation :</label>
+          <input type="checkbox" onclick="same()" name="livr_idem" id="f_idem" />
+          <br/>
+
+          <label for="f_Adresse">Adresse :</label>
+          <input type="text" name="livr_Adresse" id="f_Adresse1" />
+
+          <label for="f_codepostale">Code Postal :</label>
+          <input  type="text" name="livr_codepostale" id="f_codepostale1"  minlenght="5" maxlength="5"/>
+
+          <label for="f_ville">Ville :</label>
+          <input type="text" name="livr_ville" id="f_ville1" />
+          <br/>
+
+          <input type="submit" value="Envoyer" />
+          </fieldset>
+    </form>
+    </article>
+     </div>
+</section>
+
+<footer>
+<h3>Le lien "La Saga du Sorceleur" en haut de page permet de revenir à l'accueil</h3>
+</footer>
+
+</html>

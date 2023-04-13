@@ -1,0 +1,97 @@
+
+header img {
+  height: 100px;
+  vertical-align: bottom;
+}
+
+/* Pour colorer les blocs, activez les rÃÂÃÂ¨gles en 
+   supprimant les caractÃÂÃÂ¨res '_'.
+*/
+ 
+_header { background-color: lightskyblue;}
+_section { background-color: lightgrey;}
+_section aside { background-color: tomato;}
+_section article { background-color: orange;}
+_footer { background-color: grey;}
+_footer div { background-color: lightgreen;}
+
+header {display:inline-grid ; vertical-align: top; width:1000px;height:100px;}
+aside {display:inline-grid;width:250px;padding-left:20px;padding-top:20px; vertical-align:top;}
+article {display: inline-grid; vertical-align: top; width:500px;}
+footer {display:flex; padding-left:25px;}
+
+
+header {
+  color: =white;
+  background-color:#393936;
+  position: relative;
+  background-position: top;
+}
+
+header h1 {
+  color: white;
+  font-family: "Crimson Text", "freeserif", serif;
+  font-size: 22px;
+  font-weight: normal;
+  margin: 40px 0 30px 30px;
+  line-height: 0;
+  position: absolute;
+  top : 0px;
+  left: 70px;
+  z-index: 2;
+}
+
+header a {
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  text-decoration: none; 
+  padding: 0 1.3rem 8px;
+  position: relative;
+  float: left;
+  top:-30px;
+  left:55px;
+}
+
+header a.actif {
+  border-bottom: 4px solid #FFBC23;
+}
+
+
+article {
+  width: 42%;
+}
+
+article h2, article h3, article h4, article h5 {
+  font-family: "Open-Sans", sans-serif;
+  font-weight: normal;
+  font-size: 13px;
+  color: #393939;
+}
+
+article h3 {
+  color: #ABABAB;
+  }
+
+article h3 a {
+  color: #3B3B3B;
+  text-decoration: none;
+  font-size: 11px;
+}
+
+article h5 {
+  border-bottom-color: #E9E9E9;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+}
+
+article p {
+  font-family: "Crimson Text", "freeserif", serif;
+  font-size: 15px;
+  font-weight: 300;
+  color: #3B3B3B;
+  line-height: 17.55px;
+}
+/* Footer */
+

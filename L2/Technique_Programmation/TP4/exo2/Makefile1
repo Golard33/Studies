@@ -1,0 +1,17 @@
+all: main.out
+
+main.o: main.c
+	$(CC) $(CFLAGS) main.o main.c
+
+book.o: book.c book.h
+	$(CC) $(CFLAGS) book.o book.c
+
+library.o: library.c library.h
+	$(CC) $(CFLAGS) library.o library.c
+
+main.out: main.o book.o library.o
+	$(CC) $(CFLAGS) main.out main.o book.o library.o
+	$(LDFLAGS) $(LDLIBS)
+	
+clean:
+	$(RM) *.o *.out

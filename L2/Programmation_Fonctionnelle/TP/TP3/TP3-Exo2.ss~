@@ -1,0 +1,51 @@
+(#%require eopl)
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; Exercice 2 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+  
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;; Exo 2.1 ;;;;;;;;;;;;;;;;;;;;;;  
+
+(define l1 '(jus pomme abricot fraise))
+(define l2 '(pomme banane citron))
+
+
+
+(define (produit-Julie? p liste)
+  (cond 
+       ((null? liste) #f)
+       ((equal? (car liste) p) #t)
+       (else (produit-Julie? p (cdr liste)))
+  )
+)
+
+;;(trace produit-Julie?)
+
+;;(produit-Julie? 'poire l2)
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;; Exo 2.2 ;;;;;;;;;;;;;;;;;;;;;;   
+
+
+(define (produits-double p-Jules p-Julie)
+  (cond
+       ((null? p-Jules) '())
+       ((produit-Julie? (car p-Jules) p-Julie)
+        (cons (car p-Jules) (produits-double (cdr p-Jules) p-Julie))
+       )
+       (else (produits-double (cdr p-Jules) p-Julie))
+  )
+)
+
+;;(trace produits-double)
+
+;;(produits-double l1 l2)
+
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;; Exo 2.3 ;;;;;;;;;;;;;;;;;;;;;;
+
+
+
+

@@ -1,0 +1,65 @@
+<!DOCTYPE HTML>
+<html lang="fr" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Ton ami Didou !</title>
+    <script type="text/javascript" src="./galerie.js"></script>
+</head>
+
+<body id="body" oncontextmenu="CouleurFond()">
+  <h1>Ton ami Didou !</h1>
+    <p>Didou, dessine-moi <b id="id_quoi">un animal...</b></p>
+    <p><img id="id_image" src="images/didou.jpg" height="350px"/></p>
+    <label>Méthode 1 :navigation </label>
+    <input type="button" value="un chien" onclick="changeImageM1('images/chien.jpg', 'un chien !')"
+    />
+    <input type="button" value="un loup" onclick="changeImageM1('images/loup.jpg', 'un loup !')"
+    />
+    <br/>
+
+    <label>Méthode 2 :accès direct </label>
+    <input type="button" value="une chouette" onclick="changeImageM2('id_image', 'id_quoi', 'images/chouette.jpg', 'une chouette')"
+    />
+    <input type="button" value="un singe" onclick="changeImageM2('id_image', 'id_quoi', 'images/singe.jpg', 'un singe')"
+    />
+    <br/>
+
+    <label>Méthode 3 :Query selector </label>
+    <input type="button" value="un mouton" onclick="changeImageM3('images/mouton.jpg', 'un mouton !')"
+    />
+    <input type="button" value="un dauphin" onclick="changeImageM3('images/dauphin.jpg', 'un dauphin !')"
+    />
+      <img/>
+
+      <footer>
+          <input type="button" value="remise à l'état initial" onclick="changeImageM2('id_image', 'id_quoi', 'images/didou.jpg', 'un animal..')"  />
+            <br/>
+              <table border = "0">
+                <tr>
+                  <td> <img onmouseover="changeImageM3('images/didou.jpg', 'Didou')" src="images/didou.jpg" alt="didou" height="50px">  </img></td>
+                  <td> <img onmouseover="changeImageM3('images/chien.jpg', 'un chien')" src="images/chien.jpg" alt="chien" height="50px">  </img></td>
+                  <td> <img onmouseover="changeImageM3('images/loup.jpg', 'un loup')" src="images/loup.jpg" alt="loup" height="50px">  </img></td>
+                  <td> <img onmouseover="changeImageM3('images/chouette.jpg', 'un chouette')" src="images/chouette.jpg" alt="chouette" height="50px">  </img></td>
+                  <td> <img onmouseover="changeImageM3('images/singe.jpg', 'un singe')" src="images/singe.jpg" alt="singe" height="50px">  </img></td>
+                  <td> <img onmouseover="changeImageM3('images/mouton.jpg', 'un mouton')" src="images/mouton.jpg" alt="mouton" height="50px">  </img></td>
+                  <td> <img onmouseover="changeImageM3('images/dauphin.jpg', 'un dauphin')" src="images/dauphin.jpg" alt="dauphin" height="50px">  </img></td>
+                </tr>
+              </table>
+        </footer>
+
+</body>
+  <script>
+  var bodyTag = document.body;
+  var p1Tag   = bodyTag.childNodes[3];
+  var bTag    = p1Tag.lastChild;
+  var p2Tag   = bodyTag.childNodes[5];
+  var imgTag  = p2Tag.firstChild;
+
+  console.log("p1Tag  : "+ p1Tag.innerHTML);
+  console.log("bTag   : "+ bTag.innerHTML);
+  console.log("imgTag : "+ imgTag.src);
+
+
+  </script>
+</html>

@@ -1,0 +1,20 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="tp3Commico" version="4">
+  <OBJECT>
+    <ID name="tp3Commico" mc="Standard.Project" uid="b9fe46fc-27f5-4e8d-ad6f-3cba4b296e72"/>
+    <ATTRIBUTES>
+      <ATT name="ProjectContext"></ATT>
+      <ATT name="ProjectDescr"></ATT>
+      <ATT name="Name"><![CDATA[tp3Commico]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="Model">
+        <COMPID name="tp3commico" mc="Standard.Package" uid="03a7013a-d949-431d-b13b-403d8a2b9d08"/>
+      </COMP>
+      <COMP relation="DiagramRoot">
+        <COMPID name="tp3Commico" mc="Infrastructure.DiagramSet" uid="0671c2f9-be9c-4754-9af1-55177ab8be54"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

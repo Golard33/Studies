@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "module": "CommonJS",
+    "moduleResolution": "Node",
+    "noImplicitAny": true,
+    "outDir": "js",
+    "strict": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "target": "ES6"
+  },
+  "include": [
+    "ts/**/*"
+  ]
+}

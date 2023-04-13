@@ -1,0 +1,8 @@
+(define (emballer-100 x)
+  (/ x 100)
+  (display (/ x 100) )
+(define (emballer-50 x)
+  (/ x 50) )
+(define (emballer-10 x)
+  (/ x 10) )
+(define 

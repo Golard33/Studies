@@ -1,0 +1,11 @@
+QUESTION 2 :
+ Le degré d'exactitude correspond au degré (le plus élevé) du polynôme pour lequel l'erreur sera nulle.
+donc le calcul approché de l'intégrale sera correcte pour ces polynomes.
+L'erreur nulle est obtenue avec un polynôme de degré 5.
+
+le degré d'exactitude de la méthode est 5. Par conséquent l'ordre de convergence est 6.
+
+QUESTION 3 : le test est fait avec un polynôme de degré 6 et on remarque que l'erreur est de d'ordre 10^-10.
+En conclusion, Le degré d'exactitude est bien 5.
+
+QUESTION 4 :  en comparant pour n= 10 et n = 20 on remarque que la valeur absolue de l'erreur est d'environ 6 ce qui correspond au degré de convergence.

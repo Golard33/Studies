@@ -1,0 +1,64 @@
+(load "libcalc.ss")
+
+
+
+
+(define (x1 "+"))
+(define (x2 "-"))
+(define (x3 "/"))
+(define (x4 "*"))
+
+(define (add a b)
+  (if (non_zero? b )
+        (add (incrementer a) (decrementer b))
+  a))
+
+ (define (sou a b)
+  (if (non_zero? b )
+        (sou (decrementer a) (decrementer b))
+  a))
+
+ (define (mul a b)
+   (if (non_zero? b)
+       (add a (mul a (decrementer b)))
+       b))
+
+(define (div a b)
+   (if (sup_egal? a b)
+      (incrementer (div (sou a b) b))
+      0))
+
+(define (calcpost)
+  (let (a (read))
+  (if(not(equal? "fin" a))
+     (if (number? a)
+         (empiler a))
+     (if (string? a)
+  
+         (if (equal? a x1)
+             (sommet)
+             (depiler)
+             (empiler (add a b)))
+  
+         (if (equal? a x2)
+             (sommet)
+             (depiler)
+             (empiler (sou a b)))
+  
+         (if (equal? a x3)
+             (sommet)
+             (depiler)
+             (empiler (div a b)))
+  
+         (if (equal? a x4)
+             (sommet)
+             (depiler)
+             (empiler (mul a b)))
+         (if (equal? "=")
+      
+  ))
+        )))
+  
+      
+      
+      

@@ -1,0 +1,18 @@
+header{
+  display:none;
+}
+
+body{
+  font-family:serif;
+  background: none;
+}
+
+#menu {
+	display: none;
+}
+#retour{
+	display: none;
+}
+#suivant{
+	display: none;
+}

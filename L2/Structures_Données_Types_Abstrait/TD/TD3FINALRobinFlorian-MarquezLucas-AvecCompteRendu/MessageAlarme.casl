@@ -1,0 +1,42 @@
+library libraryMessage
+from Basic/Numbers              get Nat
+from Basic/CharactersAndStrings get String
+
+spec MESSAGE = 
+    Nat and String
+then sort Message 
+    preds
+        estVide : Message;
+        estTransmis : Message;
+        estRecu : Message;
+    ops
+        creer : Message;
+        editer : Message * String ->? Message;
+        envoyer : Message * Nat ->? Message;
+        accuserReception : Message ->? Message;
+        identifiant : Message -> Nat;
+        contenu : Message ->? String;
+        destinataire : Message -> Nat;
+
+    forall m1 : Message; d1 : Nat; s1 :String
+        . def editer (m1, s1) <=> estVide(m1)
+        . def envoyer (m1, d1) <=> not estVide(m1)
+        . def accuserReception(m1) <=> estTransmis(m1) /\ estRecu(m1)
+       %% operation creer
+        . estVide(creer)
+        . not estTransmis(creer)
+       %% operation editer
+        . not estVide(editer(m1, s1))
+        . identifiant(editer(m1, s1)) = identifiant(m1)
+        . contenu(editer(m1, s1)) = s1
+       %% operation envoyer 
+        . destinataire(envoyer(m1, d1)) = d1
+        . estTransmis(envoyer(m1, d1))
+        . contenu(envoyer(m1, d1)) = contenu(m1)
+        . identifiant(envoyer(m1, d1)) = identifiant(m1)
+       %% operation accuserReception
+        . estRecu(accuserReception(m1))
+        . destinataire(accuserReception(m1)) = destinataire(m1)
+        . identifiant(accuserReception(m1)) = identifiant(m1)
+        . contenu(accuserReception(m1)) = contenu(m1)
+end      

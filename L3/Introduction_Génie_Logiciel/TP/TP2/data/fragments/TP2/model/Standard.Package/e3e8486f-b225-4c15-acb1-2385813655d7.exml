@@ -1,0 +1,64 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="tp2" version="4">
+  <OBJECT>
+    <ID name="tp2" mc="Standard.Package" uid="e3e8486f-b225-4c15-acb1-2385813655d7"/>
+    <PID name="TP2" mc="Standard.Project" uid="999b5373-3809-4a81-9310-5a86ba6e4b2d"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[tp2]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedBehavior">
+        <COMPID name="Interaction" mc="Standard.Interaction" uid="5f742fd2-7c0e-4fd4-81d1-96bd0bc729b8"/>
+      </COMP>
+      <COMP relation="OwnedElement">
+        <COMPID name="Client" mc="Standard.Actor" uid="d0f3d52d-79fc-4b3e-82ee-b3a505e140ad"/>
+        <COMPID name="Passer commande" mc="Standard.UseCase" uid="b9a95a86-3cfc-4fc4-8b3d-1c4832fff927"/>
+        <COMPID name="Gros client" mc="Standard.Actor" uid="372e0563-8c3b-4966-b7b8-54371854d162"/>
+        <COMPID name="Client prioritaire" mc="Standard.Actor" uid="0a6c9181-fe69-4ccf-be9c-281f230e899a"/>
+        <COMPID name="Modifier commande" mc="Standard.UseCase" uid="ab997246-3b49-470f-a7d3-f693e97dc27f"/>
+        <COMPID name="Direction commericale" mc="Standard.Actor" uid="a87b68e9-37c3-4a83-a4eb-67711f7bf113"/>
+        <COMPID name="Controler pièce" mc="Standard.UseCase" uid="83fd99c4-92f2-4b0b-ba82-59973837610b"/>
+        <COMPID name="pièces maison" mc="Standard.UseCase" uid="f618724f-88cf-42bb-a405-040f9762328a"/>
+        <COMPID name="pièces sous-traitées" mc="Standard.UseCase" uid="54e807f7-5421-40db-bc2f-8c83ecdcf263"/>
+        <COMPID name="Usine" mc="Standard.Actor" uid="4df14d6a-d352-4c91-933b-4a6c17832d14"/>
+        <COMPID name="Service gestion stock" mc="Standard.Actor" uid="37ccd156-755d-4b7d-8e2c-4172ea517f5d"/>
+        <COMPID name="Approvision matière première" mc="Standard.UseCase" uid="6c4f727d-4f03-4447-8f4c-e10b11ab74d7"/>
+        <COMPID name="Valider commande" mc="Standard.UseCase" uid="57a3cc37-0204-4673-8504-467cccc69e10"/>
+        <COMPID name="Grosse commande" mc="Standard.UseCase" uid="2b4193fa-2426-4d58-979e-d2ae14052cd7"/>
+        <COMPID name="Commande prioritaire" mc="Standard.UseCase" uid="83511aa6-47c8-4855-8831-ec9936246fb5"/>
+        <COMPID name="commande normal" mc="Standard.UseCase" uid="041f395d-d7f8-4990-ba2d-519f2612c5dc"/>
+        <COMPID name="usine de montage" mc="Standard.Actor" uid="370d8fbc-9bd1-4db6-bd48-f211ad9d3d99"/>
+        <COMPID name="usine de fabrication " mc="Standard.Actor" uid="2a63e574-286e-49f2-aaeb-d5f59993cdff"/>
+        <COMPID name="Assemblage pièce" mc="Standard.UseCase" uid="87394e96-28d4-4236-bc19-70213ffdc33a"/>
+        <COMPID name="Facture" mc="Standard.UseCase" uid="043755de-bf54-47fc-8b98-c93af744b0fa"/>
+        <COMPID name="Pièces" mc="Standard.UseCase" uid="95789a0e-4981-4ff1-bc8d-229c79c702e5"/>
+        <COMPID name="clients" mc="Standard.Class" uid="e6a82509-f3c6-4dce-83aa-e8165d8159ee"/>
+        <COMPID name="Clients prioritaire" mc="Standard.Class" uid="699447d7-d9c3-443c-a1e1-3f24dce28074"/>
+        <COMPID name="Gros clients " mc="Standard.Class" uid="fb8685f4-8422-4235-a1cd-fe3c06bcbf66"/>
+        <COMPID name="usine" mc="Standard.Class" uid="eae30392-536a-45b7-ba9a-09d831565953"/>
+        <COMPID name="usine de montage" mc="Standard.Class" uid="f533a7de-3429-4128-bcbc-72b53b6ca3e7"/>
+        <COMPID name="usine de fabrication" mc="Standard.Class" uid="9a54a9ec-15c4-4764-83ea-4021922fb74e"/>
+        <COMPID name="pièces" mc="Standard.Class" uid="d4594abb-2f4f-4bcb-b934-e8bf0992073e"/>
+        <COMPID name="pièces_ST" mc="Standard.Class" uid="06b8adcc-bda0-4864-8449-34c978eb9fc5"/>
+        <COMPID name="pièces maison" mc="Standard.Class" uid="38de7363-4e17-4a4d-bc6e-cd1318ceec1b"/>
+        <COMPID name="matiere_premiere" mc="Standard.Class" uid="48449a39-2405-404c-8e27-7655d7701659"/>
+        <COMPID name="commande" mc="Standard.Class" uid="e41d01e5-9634-4ed9-a61a-b5a994dd2bbf"/>
+        <COMPID name="commande_prio" mc="Standard.Class" uid="d132e6a4-3151-4c8a-9533-b79f96bb7db2"/>
+        <COMPID name="grosse_commande" mc="Standard.Class" uid="9b0231c5-3f69-4268-9961-7650a1aa6b05"/>
+        <COMPID name="Service gestion des stocks" mc="Standard.Class" uid="3aa6506d-9144-486f-9517-815a5861d07b"/>
+        <COMPID name="direction" mc="Standard.Class" uid="5b435e2d-8c30-4b80-a2b2-57b3156383ea"/>
+        <COMPID name="facture" mc="Standard.Class" uid="ebeb6379-8cfb-4326-b46f-9e25d5d6850b"/>
+      </COMP>
+      <COMP relation="Product">
+        <COMPID name="Diagramme de cas d'utilisation tp2" mc="Standard.UseCaseDiagram" uid="eced5191-778c-4129-8007-d5525d8974d2"/>
+        <COMPID name="Diagramme de classe tp2" mc="Standard.ClassDiagram" uid="882ffe33-960a-47af-a9a7-8baafffba4f8"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

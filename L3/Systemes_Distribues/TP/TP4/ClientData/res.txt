@@ -1,0 +1,1 @@
+Le factoriel de 15 est 1307674368000.

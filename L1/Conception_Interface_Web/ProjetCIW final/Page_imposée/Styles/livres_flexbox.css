@@ -1,0 +1,112 @@
+header img {
+  height: 100px;
+  vertical-align: bottom;
+}
+
+header { background-color: #393939; display: flex; color: white;}
+
+header h1{
+  font-family: "Crimson Text", "freeserif", serif;
+  font-size: 22px;
+  font-weight: normal;
+  margin: 40px 0 28px 30px;
+  line-height: 0;
+}
+
+header a {
+  color: white;
+  padding: 0 20px 4px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 9px;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+header a.actif {
+  border-bottom: 4px solid #FFBC23;
+}
+
+
+section { background-color: white; display: flex;}
+
+section aside {
+  display: flex;
+  flex-direction: column;
+  padding:20px 0px 0px 20px;
+  text-align: center;
+  width:250px
+}
+
+section aside div:last-child {background-color: white;}
+
+
+section aside div{background-color: white; margin-top: 5px;}
+
+
+section article {
+  width: 450px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  margin-left: 33px;
+  text-align: left;
+  font-family: "Open-Sans", sans-serif;
+  font-weight: normal;
+  font-size: 11px;
+  color: #393939;
+  padding: 0px 20px;}
+
+section article h2{
+  font-family: "Open-Sans", sans-serif;
+  font-weight: normal;
+  font-size: 13px;
+  color: #393939;}
+
+section article h5{
+  border-bottom-color: #E9E9E9;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  font-size: 12px;
+  height: 13px;
+}
+
+section article h3{
+  color: #ABABAB;
+  font-size: 11px;}
+
+section article a{
+  color: #3B3B3B;
+  text-decoration: none;
+  font-size: 9px;}
+
+section article p{
+  font-family: "Crimson Text", "freeserif", serif;
+  font-size: 11.5px;
+  font-weight: 300;
+  color: #3B3B3B;
+  line-height: 17.6px;}
+
+
+
+
+footer {
+  background-color: white;
+  display: flex;
+  margin-top: 20px;
+}
+
+footer div:first-child {
+  background-color: white;
+  display: flex;
+  margin-left: 20px;
+  margin-right: 2px;
+  width: 208px;
+  height: 56px;
+}
+
+footer div:last-child{
+  background-color: white;
+  display:flex;
+  width: 206;
+  height: 56;
+}

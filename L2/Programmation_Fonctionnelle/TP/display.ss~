@@ -1,0 +1,13 @@
+(define (prixttc1 ht tva)
+  (display "Prix HT : ")(display ht)
+  (newline)
+  (display "TVA")(display tva)
+  (newline)
+  (display "----------------------")
+  (newline)
+  (display "Prix TTC"
+
+
+  (* ht (+ 1 tva) )
+  
+  )

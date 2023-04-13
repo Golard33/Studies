@@ -1,0 +1,5 @@
+(define x 6)
+(define y c)
+(define z "ab")
+
+(cons x (list y z))

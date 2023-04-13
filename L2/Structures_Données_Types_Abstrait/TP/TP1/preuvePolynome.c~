@@ -1,0 +1,13 @@
+#include "polynome.h"
+
+
+
+main(){
+  
+  POLYNOME p;
+  p=Nul();
+  if (estNul(p))
+  	printf("p est nul");
+  else
+  	printf("yoyo");
+}

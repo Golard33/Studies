@@ -1,0 +1,21 @@
+\begin{thebibliography}{1}
+
+\bibitem{livre}
+and K.~Sycara. A.~Ankolenkar, F.~hutch.
+\newblock concurrents semantics for the web services specification language
+  daml-s.
+\newblock In {\em the fifth international conference on coordination models and
+  language}, 2002.
+
+\bibitem{CRSHG}
+C.~Reynaud Safar and H~Gagliardi.
+\newblock une expérience de représentation d'une ontologie dans le médiateur
+  picsel.
+\newblock In {\em IC 2001}, pages 329 -- 348, 2001.
+
+\bibitem{W3C}
+W3C.
+\newblock Simple object access protocol (soap)., 2000.
+\newblock http ://www.w3.org/TR/SOAP, 2000.
+
+\end{thebibliography}

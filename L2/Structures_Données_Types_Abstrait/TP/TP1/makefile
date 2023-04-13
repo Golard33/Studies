@@ -1,0 +1,8 @@
+preuvePolynome: polynome.o preuvePolynome.o
+	cc -o preuvePolynome preuvePolynome.o polynome.o
+
+polynome.o: polynome.h polynome.c
+	cc -c polynome.c
+
+preuvePolynome.o: polynome.h preuvePolynome.c
+	cc -c preuvePolynome.c

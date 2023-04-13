@@ -1,0 +1,7 @@
+Ordre numérique de chacune des méthodes :
+  * Formule point milieu d'ordre 2.
+  * Formule des Trapeze d'ordre 2.
+  * Formule de Simpson Composite d'odre 4.
+
+  Donc la formule de Simpson est la méthode la plus efficace
+  car elle calcule avec une meilleure précision la valeur d'erreur.

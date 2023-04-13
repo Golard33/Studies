@@ -1,0 +1,9 @@
+\babel@toc {french}{}
+\contentsline {section}{\numberline {1}Introduction}{2}{section.1}%
+\contentsline {section}{\numberline {2}Les débuts du cloud computing}{3}{section.2}%
+\contentsline {section}{\numberline {3}Les différents services proposés }{4}{section.3}%
+\contentsline {section}{\numberline {4} L’utilisation du cloud computing }{5}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Pour les entreprises}{5}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Pour les utilisateurs privées}{6}{subsection.4.2}%
+\contentsline {section}{\numberline {5}Avantages et inconvénients}{8}{section.5}%
+\contentsline {section}{\numberline {6}Critiques et limites du cloud computing }{8}{section.6}%

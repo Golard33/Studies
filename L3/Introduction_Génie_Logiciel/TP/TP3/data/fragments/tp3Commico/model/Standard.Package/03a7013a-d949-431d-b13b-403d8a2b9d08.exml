@@ -1,0 +1,78 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="tp3commico" version="4">
+  <OBJECT>
+    <ID name="tp3commico" mc="Standard.Package" uid="03a7013a-d949-431d-b13b-403d8a2b9d08"/>
+    <PID name="tp3Commico" mc="Standard.Project" uid="b9fe46fc-27f5-4e8d-ad6f-3cba4b296e72"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[tp3commico]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="standard" mc="Standard.Actor" uid="f8bbf46f-5837-47a0-a368-a535fc1c05a1"/>
+        <COMPID name="plaignant" mc="Standard.Actor" uid="ca58d7fc-681c-4e1f-a675-70eed732f395"/>
+        <COMPID name="témoin" mc="Standard.Actor" uid="43d5d1c2-cf59-4284-8b67-10cbf5b4ff1b"/>
+        <COMPID name="commissaire" mc="Standard.Actor" uid="6be9781d-bcf7-40c6-8248-549e30f0b457"/>
+        <COMPID name="enregistrer appel" mc="Standard.UseCase" uid="9590d66b-284b-4f64-9bd2-13b6ae23eb60"/>
+        <COMPID name="appeler commissariat" mc="Standard.UseCase" uid="e00a7f86-1664-4118-86d2-7cb8cbbb70bf"/>
+        <COMPID name="répartir mission" mc="Standard.UseCase" uid="df851c4a-385d-4056-840b-17a6a920b71b"/>
+        <COMPID name="diriger vers la division concernée" mc="Standard.UseCase" uid="ba2e0354-4835-4066-b8b7-927d1b5eb4b7"/>
+        <COMPID name="attribuer inspecteur" mc="Standard.UseCase" uid="85fa3383-e792-4408-8a18-4e69a70e6923"/>
+        <COMPID name="policiers en mission" mc="Standard.Actor" uid="04e80f13-682e-42af-a9ce-510e97940e3f"/>
+        <COMPID name="indiquer état mission" mc="Standard.UseCase" uid="871f17fa-88cf-4095-82e8-a82acdf50914"/>
+        <COMPID name="secrétariat" mc="Standard.Actor" uid="a14b20ac-990d-4f4e-83f4-1002dc7276f4"/>
+        <COMPID name="enregistrer mission et heure de départ" mc="Standard.UseCase" uid="7f418aff-58b8-4cbf-9057-76dd8c1d731a"/>
+        <COMPID name="attribuer unité" mc="Standard.UseCase" uid="1986127a-53a1-4961-9004-f21b2ed99036"/>
+        <COMPID name="indiquer éventuels incidents" mc="Standard.UseCase" uid="8d3f495e-623f-468c-89f8-ea75eecf68f8"/>
+        <COMPID name="indiquer étapes" mc="Standard.UseCase" uid="8790671c-a3c0-4977-8559-2b0bfa2080d7"/>
+        <COMPID name="système" mc="Standard.Actor" uid="352b1793-6a73-42bf-ba0c-c308174773ad"/>
+        <COMPID name="alerter commissariat" mc="Standard.UseCase" uid="f67d620a-d966-432d-a5c0-d7d450734933"/>
+        <COMPID name="créér mission renfort" mc="Standard.UseCase" uid="e4f5656d-9024-4290-a166-daadf805f536"/>
+        <COMPID name="service archives" mc="Standard.Actor" uid="f4799189-b43c-4e6e-b484-1a535cd2b01e"/>
+        <COMPID name="retrouver archives liées à l'enquête" mc="Standard.UseCase" uid="1830144e-6619-400b-b372-994b26912ba5"/>
+        <COMPID name="arrêter coupable avec mandat arrêt" mc="Standard.UseCase" uid="03d157b6-1ffd-4c59-8c0d-80134f0f854e"/>
+        <COMPID name="rédiger rapport" mc="Standard.UseCase" uid="11ad8cb4-393b-4d66-958a-2a06c3ac6c7c"/>
+        <COMPID name="signer plainte" mc="Standard.UseCase" uid="819cc379-840f-42f3-bff0-8bb898054520"/>
+        <COMPID name="Inspecteur" mc="Standard.Actor" uid="c8c27d12-6fde-457d-b534-a7e87c27ee44"/>
+        <COMPID name="attribuer chien" mc="Standard.UseCase" uid="15a24f59-abbd-479d-953f-fad4ad977de3"/>
+        <COMPID name="Inspecteur des stups" mc="Standard.Actor" uid="ffcc7f88-2556-4855-84fb-3c975fb38f12"/>
+        <COMPID name="Inspecteur de la criminelle" mc="Standard.Actor" uid="fb1d1d19-281e-40c2-b971-0a31700a3662"/>
+        <COMPID name="collabore avec juge tribunal instance" mc="Standard.UseCase" uid="b8ecbf73-666b-4802-a449-eef4a4ace3ac"/>
+        <COMPID name="Policier" mc="Standard.Actor" uid="5e047860-b3d4-4f39-9d18-6af339da5a5a"/>
+        <COMPID name="Traite les délits" mc="Standard.UseCase" uid="fa511d50-7d8d-426e-8c57-fcc5b8dfd470"/>
+        <COMPID name="Policier" mc="Standard.Class" uid="2e680ee7-d7df-4920-8af4-e974370575de"/>
+        <COMPID name="Comissaire" mc="Standard.Class" uid="46b89c72-6f33-4d5c-ac84-bcffb3802062"/>
+        <COMPID name="Inspecteur" mc="Standard.Class" uid="8719381c-5cf1-457f-9eca-4c0ce09e17c0"/>
+        <COMPID name="Plaignant" mc="Standard.Class" uid="b2174eb0-5167-456c-abf8-4bf74b1736cd"/>
+        <COMPID name="Témoin" mc="Standard.Class" uid="15680e3f-4079-44fc-b8d1-17b551498484"/>
+        <COMPID name="Standard" mc="Standard.Class" uid="661aee54-22ea-4c22-9837-7961499c3cb0"/>
+        <COMPID name="Ordinateur standard" mc="Standard.Class" uid="d7f719b4-50cc-49de-9eb1-d778f18ff685"/>
+        <COMPID name="Commissariat" mc="Standard.Class" uid="7998d165-c2c8-4ffa-9428-e1c698045e2d"/>
+        <COMPID name="Mission" mc="Standard.Class" uid="b28909b6-1fa5-4baf-a4cc-7386658797a4"/>
+        <COMPID name="Unité" mc="Standard.Class" uid="f797c0d8-ed98-4e66-960f-d973dadee95e"/>
+        <COMPID name="Juge" mc="Standard.Class" uid="f972d45b-0317-4a51-ad39-3313b690ebca"/>
+        <COMPID name="Personne" mc="Standard.Class" uid="02f85f67-f8bb-42bf-a106-7f28a62b80bb"/>
+        <COMPID name="coupable" mc="Standard.Class" uid="c81dfec3-03b3-40e4-82c6-e7949c62e5e0"/>
+        <COMPID name="Système" mc="Standard.Class" uid="d00d4853-758d-4fa6-9227-876b44e5f8d5"/>
+        <COMPID name="Mission renfort" mc="Standard.Class" uid="a9d9993f-8a95-4c74-9795-29c4dd476e56"/>
+        <COMPID name="secrétariat" mc="Standard.Class" uid="1488a840-dba9-4677-b956-56a905983a3e"/>
+        <COMPID name="service archives" mc="Standard.Class" uid="c2d6c0a2-9623-4cc5-adb8-e9a3162d4b96"/>
+        <COMPID name="rapport" mc="Standard.Class" uid="af42ab9b-314b-460a-95e5-758b0e179f72"/>
+        <COMPID name="ressources" mc="Standard.Class" uid="fc66e20c-d390-41d6-9360-8e9777250d17"/>
+        <COMPID name="ressources stups" mc="Standard.Class" uid="1833e187-93d0-4e67-ba80-b54397b901d7"/>
+        <COMPID name="mission criminelles" mc="Standard.Class" uid="ff5d989d-08c5-4fc7-93c8-fff8ad080497"/>
+        <COMPID name="ressources crimi" mc="Standard.Class" uid="e53afc5c-9cac-475d-814c-b6fbe45d9726"/>
+        <COMPID name="mission stup" mc="Standard.Class" uid="6b75b11d-62c5-4618-bcc7-7656a7e56cab"/>
+      </COMP>
+      <COMP relation="Product">
+        <COMPID name="Diagramme de cas d'utilisation tp3commico" mc="Standard.UseCaseDiagram" uid="9e28d36b-06f9-473a-9752-b44db3c33abb"/>
+        <COMPID name="Diagramme de classe tp3commico" mc="Standard.ClassDiagram" uid="2d6db8a4-1e67-4108-b998-b6d5ef532544"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>
