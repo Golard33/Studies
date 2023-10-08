@@ -1,0 +1,19 @@
+{
+  "author": "B--Di",
+  "description": "Selfie",
+  "license": "MIT",
+  "main": "js/Selfie.js",
+  "name": "Selfie",
+  "version": "1.0.0",
+  "scripts": {
+    "configuration": "tsc --showConfig",
+    "construction": "tsc"
+  },
+  "dependencies": {
+    "quagga": "^0.12.1",
+    "soundjs": "^1.0.1"
+  },
+  "devDependencies": {
+    "typescript": "^4.8.4"
+  }
+}

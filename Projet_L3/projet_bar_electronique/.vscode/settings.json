@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "tireuses.h": "c",
+        "system_error": "c",
+        "stdbool.h": "c",
+        "fifo.h": "c"
+    }
+}
